@@ -3,48 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BT Logistix | Pretoria Logistics & Supply Support</title>
-<meta name="description" content="BT Logistix provides Pretoria-based moving, delivery and cleaning supplies support for households and businesses.">
+<title>BT Logistix | Pretoria Moving, Deliveries & Supply Support</title>
+<meta name="description" content="BT Logistix provides Pretoria-based moving, local deliveries and industrial and household cleaning supply support.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#070707;--panel:#111;--gold:#d4a11e;--gold2:#f3c94e;--text:#fff;--muted:#bbb;--line:rgba(255,255,255,.12)}
+:root{
+  --black:#050505;
+  --charcoal:#111111;
+  --paper:#f5f2eb;
+  --white:#ffffff;
+  --ink:#121212;
+  --muted:#666;
+  --gold:#d9a514;
+  --gold-dark:#9c7405;
+  --line:rgba(0,0,0,.13);
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Rajdhani,Arial,sans-serif;background:#070707;color:#fff;overflow-x:hidden}
-body:before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 10%,rgba(212,161,30,.12),transparent 30%)}
-.wrap{width:min(1160px,calc(100% - 44px));margin:auto;position:relative;z-index:1}
-header{min-height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;border-bottom:1px solid var(--line);background:rgba(7,7,7,.9);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}
-.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none}.mark{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#fff,#bdbdbd);color:#050505;display:grid;place-items:center;font-family:Oswald,sans-serif;font-weight:900;letter-spacing:-.12em;box-shadow:0 0 0 3px rgba(212,161,30,.18)}
-.brand b{font-family:Oswald,sans-serif;font-weight:900;display:block}.brand span{font-size:11px;color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:.12em}
-nav{display:flex;align-items:center;gap:24px}nav a{color:#eee;text-decoration:none;font-weight:850;font-size:14px}.wa{background:var(--gold);color:#050505!important;padding:13px 18px;border-radius:999px}
-section{padding:72px 0}.hero{padding:92px 0 72px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
-.eyebrow{display:inline-flex;width:max-content;color:var(--gold2);border:1px solid rgba(212,161,30,.35);background:rgba(212,161,30,.08);padding:9px 14px;border-radius:999px;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase;margin-bottom:24px}
-h1,h2,h3{font-family:Montserrat,Inter,sans-serif;letter-spacing:-.055em}h1{font-size:clamp(54px,7vw,94px);line-height:.9;max-width:850px}h1 em{font-style:normal;color:var(--gold);text-shadow:0 0 24px rgba(212,161,30,.25)}
-.lead{font-size:22px;line-height:1.45;color:#d8d8d8;max-width:680px;margin:26px 0 30px;font-weight:650}.actions{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;border-radius:999px;padding:15px 22px;text-decoration:none;font-weight:950}.primary{background:var(--gold);color:#050505}.secondary{border:1px solid rgba(212,161,30,.45);color:var(--gold);background:rgba(212,161,30,.06)}
-.hero-card{border:1px solid rgba(212,161,30,.23);background:linear-gradient(145deg,rgba(25,25,25,.95),rgba(5,5,5,.98));border-radius:36px;padding:34px;box-shadow:0 30px 80px rgba(0,0,0,.38)}.hero-card .big{font-family:Oswald,sans-serif;font-size:clamp(34px,4vw,56px);line-height:.92;letter-spacing:-.06em;margin-bottom:22px}.hero-card ul{list-style:none;display:grid;gap:13px}.hero-card li{border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:14px 16px;color:#e8e8e8;font-weight:750}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.section-head h2{font-size:clamp(38px,5vw,68px);line-height:.92;max-width:780px}.section-head p{color:var(--muted);max-width:460px;font-size:18px;line-height:1.5}
-.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{min-height:390px;border:1px solid var(--line);border-radius:34px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;position:relative;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.92)),radial-gradient(circle at 40% 10%,rgba(212,161,30,.25),transparent 40%),#151515}.service:before{content:attr(data-icon);position:absolute;top:26px;left:24px;font-size:48px}.service h3{font-size:29px;line-height:.96;margin-bottom:12px}.service p{color:#d2d2d2;line-height:1.45;font-weight:650;margin-bottom:18px}.mini-cta{color:var(--gold);font-weight:950;text-decoration:none}
-.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.proof{border:1px solid rgba(255,255,255,.1);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(212,161,30,.035));border-radius:24px;padding:22px;min-height:150px}.proof b{display:block;color:var(--gold);font-size:24px;font-family:Oswald,sans-serif;margin-bottom:10px}.proof span{color:#d8d8d8;font-weight:650;line-height:1.35}
-.proposal{display:grid;grid-template-columns:.72fr 1.28fr;gap:28px;align-items:center;border:1px solid rgba(212,161,30,.22);background:linear-gradient(145deg,rgba(24,24,24,.88),rgba(8,8,8,.95));border-radius:38px;padding:28px}.proposal img{width:100%;border-radius:26px;border:1px solid rgba(255,255,255,.11);display:block}.proposal h2{font-size:clamp(36px,4.8vw,62px);line-height:.92;margin-bottom:18px}.proposal p{color:#d5d5d5;font-size:18px;line-height:1.5;margin-bottom:22px}
-.contact-panel{text-align:center;border-radius:40px;background:linear-gradient(135deg,var(--gold),#ffe187);color:#050505;padding:58px 28px}.contact-panel h2{font-size:clamp(38px,6vw,76px);line-height:.9;margin-bottom:18px}.contact-panel p{font-size:19px;font-weight:750;margin-bottom:28px}.contact-panel .btn{background:#050505;color:#fff}
-footer{padding:38px 0;color:#aaa;border-top:1px solid var(--line)}.float{position:fixed;right:22px;bottom:22px;z-index:20;background:var(--gold);color:#050505;padding:16px 20px;border-radius:999px;font-weight:950;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.35)}
-@media(max-width:900px){header{align-items:flex-start;flex-direction:column;gap:12px;padding:14px 18px}nav{width:100%;overflow-x:auto;white-space:nowrap;padding-bottom:6px}.hero{padding:56px 0 40px}.hero-grid,.proposal{grid-template-columns:1fr}h1{font-size:clamp(46px,14vw,66px)}.lead{font-size:18px}.actions{display:grid;grid-template-columns:1fr}.btn{width:100%}.service-grid,.proof-grid{grid-template-columns:1fr}.service{min-height:320px}.section-head{display:block}.section-head h2{margin-bottom:16px}.proposal{padding:22px;border-radius:30px}.contact-panel{padding:44px 22px}}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden}
+a{color:inherit}
+.top-strip{height:7px;background:var(--gold)}
+header{background:#fff;border-bottom:1px solid #dedbd4;position:sticky;top:0;z-index:30;box-shadow:0 8px 26px rgba(0,0,0,.07)}
+.nav{width:min(1210px,calc(100% - 44px));margin:auto;min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.logo-mark{width:58px;height:58px;border-radius:4px;background:#fff;border:3px solid var(--black);display:grid;place-items:center;font:900 26px/1 'Barlow Condensed';letter-spacing:-.04em;box-shadow:7px 7px 0 var(--gold)}
+.brand b{display:block;font:900 28px/1 'Barlow Condensed';letter-spacing:.02em}
+.brand span{display:block;color:var(--gold-dark);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.17em;margin-top:3px}
+nav{display:flex;align-items:center;gap:32px;font-weight:900;font-size:14px}
+nav a{text-decoration:none}
+.quote-btn{background:var(--gold);padding:15px 22px;border-radius:3px;color:#111;text-decoration:none;font-weight:950;text-transform:uppercase}
+
+.hero{position:relative;min-height:640px;background:
+  linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.82) 44%,rgba(0,0,0,.42) 100%),
+  url('bt-proposal-showcase.jpg') center/cover no-repeat;
+  color:#fff;display:flex;align-items:center;}
+.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:140px;background:linear-gradient(transparent,var(--paper));pointer-events:none}
+.wrap{width:min(1210px,calc(100% - 44px));margin:auto;position:relative;z-index:2}
+.eyebrow{display:inline-block;background:var(--gold);color:#111;padding:9px 13px;font-size:13px;font-weight:950;text-transform:uppercase;letter-spacing:.12em;margin-bottom:22px}
+h1,h2,h3{font-family:'Barlow Condensed',Inter,sans-serif;text-transform:uppercase;letter-spacing:-.02em}
+h1{font-size:clamp(70px,9vw,138px);line-height:.82;max-width:850px}
+h1 span{color:var(--gold)}
+.lead{font-size:23px;line-height:1.45;max-width:640px;margin:28px 0 32px;color:#e8e8e8;font-weight:650}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:16px 24px;border-radius:3px;text-decoration:none;font-weight:950;text-transform:uppercase}
+.primary{background:var(--gold);color:#111}
+.secondary{border:2px solid #fff;color:#fff;background:rgba(255,255,255,.04)}
+
+section{padding:80px 0}
+.section-kicker{font-weight:950;color:#b30b0b;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.section-title{font-size:clamp(48px,6vw,86px);line-height:.88;margin-bottom:18px}
+.section-copy{font-size:20px;line-height:1.6;color:#353535;max-width:850px}
+
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:38px}
+.metric{background:#fff;border-left:5px solid var(--gold);box-shadow:0 8px 24px rgba(0,0,0,.08);padding:30px;border-radius:4px;min-height:130px}
+.metric b{display:block;font-size:40px;font-weight:500;letter-spacing:-.04em;margin-bottom:8px}
+.metric span{font-size:14px;font-weight:800}
+
+.about{background:#fff;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.about-grid{display:grid;grid-template-columns:.55fr 1.45fr;gap:60px;align-items:start}
+.about h2{font-size:clamp(54px,6vw,92px);line-height:.86}
+.about p{font-size:22px;line-height:1.65;max-width:840px;color:#222}
+
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.service-card{height:430px;position:relative;overflow:hidden;border-radius:34px 34px 4px 4px;color:#fff;background:#222;box-shadow:0 20px 45px rgba(0,0,0,.18)}
+.service-card:nth-child(1){background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.88)),linear-gradient(135deg,#272727,#050505)}
+.service-card:nth-child(2){background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.88)),linear-gradient(135deg,#343434,#111)}
+.service-card:nth-child(3){background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.88)),linear-gradient(135deg,#2d2512,#050505)}
+.service-card:nth-child(4){background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.88)),linear-gradient(135deg,#1b1b1b,#080808)}
+.icon-line{position:absolute;top:42px;left:50%;transform:translateX(-50%);width:110px;height:110px;border:3px solid rgba(255,255,255,.75);border-radius:50%;display:grid;place-items:center;font-size:44px}
+.service-content{position:absolute;left:26px;right:26px;bottom:28px;text-align:center}
+.service-content h3{font-size:38px;line-height:.9;margin-bottom:13px}
+.service-content p{font-size:15px;line-height:1.45;color:#eee;margin-bottom:16px}
+.mini{display:inline-flex;border:2px solid #fff;border-radius:3px;padding:10px 18px;text-decoration:none;font-weight:900;font-size:13px;text-transform:uppercase}
+
+.proposal-section{background:#111;color:#fff}
+.proposal-wrap{display:grid;grid-template-columns:.72fr 1.28fr;gap:40px;align-items:center}
+.proposal-text h2{font-size:clamp(54px,6.4vw,96px);line-height:.84;margin-bottom:20px}
+.proposal-text p{font-size:20px;line-height:1.55;color:#ddd;margin-bottom:24px}
+.proposal-img{background:#fff;border:1px solid rgba(255,255,255,.18);padding:16px;box-shadow:0 25px 80px rgba(0,0,0,.45)}
+.proposal-img img{width:100%;display:block}
+
+.contact{background:var(--gold);color:#111;text-align:center}
+.contact h2{font-size:clamp(54px,7vw,104px);line-height:.84;margin-bottom:20px}
+.contact p{font-size:22px;font-weight:800;margin-bottom:28px}
+.contact .btn{background:#111;color:#fff}
+
+footer{background:#111;color:#d8d8d8;padding:40px 0;border-top:7px solid var(--gold)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+footer b{color:#fff;font-family:'Barlow Condensed';font-size:30px}
+footer p,footer a{display:block;color:#d8d8d8;text-decoration:none;margin-top:10px;font-size:15px}
+
+.float{position:fixed;right:22px;bottom:22px;background:var(--gold);color:#111;padding:17px 22px;border-radius:3px;font-weight:950;text-decoration:none;z-index:40;box-shadow:0 14px 30px rgba(0,0,0,.3);text-transform:uppercase}
+
+@media(max-width:900px){
+  .nav{align-items:flex-start;flex-direction:column;padding:14px 0}
+  nav{width:100%;overflow-x:auto;white-space:nowrap;padding-bottom:8px;gap:22px}
+  .quote-btn{padding:12px 16px}
+  .hero{min-height:620px;background-position:center}
+  h1{font-size:clamp(58px,17vw,86px)}
+  .lead{font-size:18px}
+  .actions{display:grid;grid-template-columns:1fr}
+  .btn{width:100%}
+  .metrics,.service-grid,.footer-grid{grid-template-columns:1fr}
+  .about-grid,.proposal-wrap{grid-template-columns:1fr;gap:26px}
+  section{padding:58px 0}
+  .service-card{height:360px}
+}
 </style>
 </head>
 <body>
+<div class="top-strip"></div>
 <header>
-<a class="brand" href="#home"><div class="mark">BT</div><div><b>BT LOGISTIX</b><span>Driven by trust</span></div></a>
-<nav><a href="#services">Services</a><a href="#proof">Why BT</a><a href="#proposal">Proposal</a><a href="#contact">Contact</a><a class="wa" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">WhatsApp Us</a></nav>
+  <div class="nav">
+    <a class="brand" href="#home">
+      <div class="logo-mark">BT</div>
+      <div><b>BT LOGISTIX</b><span>Driven by trust</span></div>
+    </a>
+    <nav>
+      <a href="#about">About BT</a>
+      <a href="#services">Services</a>
+      <a href="#proposal">Proposal</a>
+      <a href="#contact">Contact</a>
+      <a class="quote-btn" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">Get a Quote</a>
+    </nav>
+  </div>
 </header>
+
 <main id="home">
-<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Pretoria, South Africa</div><h1>Pretoria logistics.<br><em>Driven by reliability.</em></h1><p class="lead">Moves. Deliveries. Cleaning supplies. Practical support for households, offices and growing businesses.</p><div class="actions"><a class="btn primary" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">Book on WhatsApp</a><a class="btn secondary" href="#proposal">View proposal</a></div></div><div class="hero-card"><div class="eyebrow">Capability Snapshot</div><div class="big">Moving.<br>Deliveries.<br>Supplies.</div><ul><li>Home & office moves</li><li>Local Pretoria deliveries</li><li>Industrial cleaning supplies</li><li>Household supply support</li></ul></div></div></section>
-<section id="services"><div class="wrap"><div class="section-head"><h2>Services built for local movement.</h2><p>AGS-style clarity: one service, one outcome, one action.</p></div><div class="service-grid"><article class="service" data-icon="🚚"><h3>Home & Office Moves</h3><p>Furniture, apartments, small offices and practical local relocations.</p><a class="mini-cta" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20help%20with%20a%20move">Book Move →</a></article><article class="service" data-icon="📦"><h3>Local Deliveries</h3><p>Pretoria delivery support for businesses, households and urgent items.</p><a class="mini-cta" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20delivery%20support">Book Delivery →</a></article><article class="service" data-icon="🧴"><h3>Cleaning Supplies</h3><p>Industrial and household cleaning products for reliable supply needs.</p><a class="mini-cta" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20cleaning%20supplies">Get Supplies →</a></article><article class="service" data-icon="🏢"><h3>Bulk Supply Support</h3><p>Recurring supply arrangements for teams, facilities and business clients.</p><a class="mini-cta" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20bulk%20supply%20support">Get Quote →</a></article></div></div></section>
-<section id="proof"><div class="wrap"><div class="section-head"><h2>Why partner with BT Logistix?</h2><p>Simple operating proof for customers who need reliability before price talk.</p></div><div class="proof-grid"><div class="proof"><b>Pretoria Based</b><span>Local support for customers and businesses in Pretoria.</span></div><div class="proof"><b>Fast Response</b><span>WhatsApp-first quotations and clear communication.</span></div><div class="proof"><b>Reliable Supply</b><span>Industrial and household cleaning supply capability.</span></div><div class="proof"><b>Professional Service</b><span>Driven by trust, punctuality and practical support.</span></div></div></div></section>
-<section id="proposal"><div class="wrap proposal"><div><div class="eyebrow">Featured Proposal</div><h2>Industrial & household supply proposal.</h2><p>A client-facing proposal designed to help BT Logistix look credible in procurement, facility and business supply conversations.</p><a class="btn primary" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20please%20send%20me%20the%20cleaning%20supplies%20proposal">Request Full Proposal</a></div><img src="bt-proposal-showcase.jpg" alt="BT Logistix industrial and household supply proposal preview"></div></section>
-<section id="contact"><div class="wrap contact-panel"><h2>Need a move, delivery or supply quote?</h2><p>Call or WhatsApp: 071 107 6834 · Email: bonganihlungwani@yahoo.com</p><a class="btn" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">Book on WhatsApp</a></div></section>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Pretoria, South Africa</div>
+    <h1>Local moves.<br>Deliveries.<br><span>Supply support.</span></h1>
+    <p class="lead">BT Logistix provides practical logistics and supply support for households, offices and businesses across Pretoria.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">Book on WhatsApp</a>
+      <a class="btn secondary" href="#services">View Services</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-kicker">Operating snapshot</div>
+    <h2 class="section-title">Built for everyday movement.</h2>
+    <p class="section-copy">A simple, service-first logistics partner for people and businesses that need reliable moving, delivery and cleaning supply support.</p>
+    <div class="metrics">
+      <div class="metric"><b>Pretoria</b><span>Local operating area</span></div>
+      <div class="metric"><b>4</b><span>Core service categories</span></div>
+      <div class="metric"><b>WhatsApp</b><span>Fast bookings & quotations</span></div>
+      <div class="metric"><b>Supply</b><span>Industrial & household products</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-kicker">About BT</div>
+      <h2>Logistics and supply support for Pretoria.</h2>
+    </div>
+    <p>BT Logistix supports households, offices and businesses with local movement, delivery coordination and cleaning supply access. The focus is simple: clear communication, practical service and reliable follow-through.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-kicker">Services</div>
+    <h2 class="section-title">What BT can handle.</h2>
+    <div class="service-grid">
+      <article class="service-card"><div class="icon-line">🚚</div><div class="service-content"><h3>Home Moves</h3><p>Furniture, apartments and practical household relocations.</p><a class="mini" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20help%20with%20a%20move">Get a Quote</a></div></article>
+      <article class="service-card"><div class="icon-line">🏢</div><div class="service-content"><h3>Office Moves</h3><p>Small business and office relocation support in Pretoria.</p><a class="mini" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20office%20moving%20support">Get a Quote</a></div></article>
+      <article class="service-card"><div class="icon-line">📦</div><div class="service-content"><h3>Deliveries</h3><p>Local delivery support for businesses and households.</p><a class="mini" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20delivery%20support">Get a Quote</a></div></article>
+      <article class="service-card"><div class="icon-line">🧴</div><div class="service-content"><h3>Supplies</h3><p>Industrial and household cleaning supply support.</p><a class="mini" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20cleaning%20supplies">Get a Quote</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="proposal-section" id="proposal">
+  <div class="wrap proposal-wrap">
+    <div class="proposal-text">
+      <div class="eyebrow">Proposal sample</div>
+      <h2>Industrial & household supply proposal.</h2>
+      <p>A client-facing proposal designed for procurement, facilities and business supply conversations.</p>
+      <a class="btn primary" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20please%20send%20me%20the%20cleaning%20supplies%20proposal">Request Full Proposal</a>
+    </div>
+    <div class="proposal-img"><img src="bt-proposal-showcase.jpg" alt="BT Logistix supply proposal preview"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Need a move, delivery or supply quote?</h2>
+    <p>071 107 6834 · bonganihlungwani@yahoo.com</p>
+    <a class="btn" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">Book on WhatsApp</a>
+  </div>
+</section>
 </main>
-<footer><div class="wrap">BT Logistix · Pretoria, South Africa · 071 107 6834 · bonganihlungwani@yahoo.com</div></footer>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div><b>BT LOGISTIX</b><p>Driven by trust. Delivered with precision.</p></div>
+    <div><b>Contact</b><p>071 107 6834</p><p>bonganihlungwani@yahoo.com</p></div>
+    <div><b>Location</b><p>Pretoria, South Africa</p></div>
+  </div>
+</footer>
+
 <a class="float" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">WhatsApp</a>
-</body></html>
+</body>
+</html>
