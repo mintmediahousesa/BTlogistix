@@ -606,6 +606,281 @@ nav a[href*="about"]{
 }
 /* === END BT LOGISTIX V3.1 DEPLOY FIX === */
 
+
+/* === BT LOGISTIX PRIORITY PASS: PRE-ASSET FREEZE === */
+/* 1 floating WhatsApp removed; 2 logistics hero; 3 DHL about; 4 unique service cards; 5 tighter proposal; 6 mobile header compression */
+
+/* Hide any legacy floating WhatsApp if still present */
+.float{display:none!important}
+
+/* Reduced nav: Services / Proposal / Contact / Get Quote only */
+nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!important}
+
+/* Softer but still industrial CTAs */
+.quote-btn,.nav-quote,.wa,.btn,.mini,.mini-cta{
+  border-radius:8px!important;
+}
+
+/* Replace brochure/proposal-background hero with logistics-style industrial scene */
+.hero{
+  min-height:620px!important;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.82) 42%,rgba(0,0,0,.45) 100%),
+    radial-gradient(circle at 78% 24%,rgba(217,165,20,.22),transparent 30%),
+    linear-gradient(135deg,#111 0%,#1c1c1c 42%,#3a2d0a 43%,#111 62%,#050505 100%)!important;
+  overflow:hidden!important;
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  right:5%;
+  bottom:14%;
+  width:min(520px,42vw);
+  height:220px;
+  opacity:.72;
+  background:
+    linear-gradient(#d9a514,#d9a514) 38% 68%/42% 8% no-repeat,
+    linear-gradient(#efefef,#efefef) 20% 54%/24% 20% no-repeat,
+    linear-gradient(#111,#111) 61% 55%/36% 24% no-repeat,
+    radial-gradient(circle,#050505 0 35%,#d9a514 36% 45%,transparent 46%) 26% 82%/90px 90px no-repeat,
+    radial-gradient(circle,#050505 0 35%,#d9a514 36% 45%,transparent 46%) 72% 82%/90px 90px no-repeat;
+  filter:drop-shadow(0 24px 40px rgba(0,0,0,.55));
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:120px;
+  background:linear-gradient(transparent,var(--paper))!important;
+}
+
+/* DHL-style About BT with less dead space */
+.about{
+  background:#fff!important;
+  border-top:1px solid #ded8cb!important;
+  border-bottom:1px solid #ded8cb!important;
+  padding:70px 0!important;
+}
+.about-grid{
+  display:grid!important;
+  grid-template-columns:.72fr 1.28fr!important;
+  gap:56px!important;
+  align-items:start!important;
+}
+.about h2{
+  font-size:clamp(54px,6.2vw,94px)!important;
+  line-height:.84!important;
+  margin:0!important;
+}
+.about-copy p{
+  font-size:20px!important;
+  line-height:1.58!important;
+  color:#202020!important;
+  margin:0 0 18px!important;
+}
+.about-metrics{
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:18px!important;
+  margin-top:36px!important;
+}
+.about-metrics article{
+  background:#fff!important;
+  border-left:6px solid var(--gold,#d9a514)!important;
+  border-radius:24px!important;
+  box-shadow:0 10px 24px rgba(0,0,0,.08)!important;
+  padding:24px!important;
+  min-height:112px!important;
+}
+.about-metrics b{
+  display:block!important;
+  font-size:30px!important;
+  line-height:1!important;
+  letter-spacing:-.02em!important;
+}
+.about-metrics span{
+  display:block!important;
+  margin-top:10px!important;
+  font-size:14px!important;
+  font-weight:850!important;
+  color:#333!important;
+}
+
+/* Rounded metrics/snapshot cards */
+.metric,.proof,.snapshot-grid article,.snapshot-card{
+  border-radius:24px!important;
+}
+
+/* Unique service card icon treatments and refined service cards */
+.service-grid{gap:22px!important}
+.service-card,.service{
+  height:370px!important;
+  border-radius:34px!important;
+  box-shadow:0 18px 44px rgba(0,0,0,.18)!important;
+}
+.service-card:nth-child(1) .icon-line,
+.service-card:nth-child(1) .icon-circle,
+.service:nth-child(1):before{
+  box-shadow:0 0 0 10px rgba(217,165,20,.12)!important;
+  border-color:#d9a514!important;
+}
+.service-card:nth-child(2) .icon-line,
+.service-card:nth-child(2) .icon-circle{
+  box-shadow:0 0 0 10px rgba(255,255,255,.08)!important;
+  border-style:dashed!important;
+}
+.service-card:nth-child(3) .icon-line,
+.service-card:nth-child(3) .icon-circle{
+  box-shadow:0 0 0 10px rgba(217,165,20,.16)!important;
+  background:rgba(217,165,20,.08)!important;
+}
+.service-card:nth-child(4) .icon-line,
+.service-card:nth-child(4) .icon-circle{
+  box-shadow:0 0 0 10px rgba(255,255,255,.07)!important;
+  border-color:#f0c94e!important;
+}
+.service-content h3,.service h3{
+  font-size:38px!important;
+  line-height:.9!important;
+}
+.service-content p,.service p{
+  font-size:15px!important;
+  line-height:1.4!important;
+}
+
+/* Proposal: keep design, tighten height, bigger preview, less black padding */
+.proposal-section{
+  padding:58px 0!important;
+}
+.proposal-wrap,.proposal{
+  gap:26px!important;
+  align-items:center!important;
+}
+.proposal-text h2,.proposal-wrap h2,.proposal h2{
+  font-size:clamp(50px,5.4vw,86px)!important;
+}
+.proposal-text p,.proposal-wrap p,.proposal p{
+  margin-bottom:18px!important;
+}
+.proposal-img{
+  padding:10px!important;
+}
+.proposal-img img,.proposal img{
+  width:100%!important;
+  max-height:680px!important;
+  object-fit:contain!important;
+  display:block!important;
+}
+
+/* Mobile: compress tall logo/header and keep CTA above fold */
+@media(max-width:900px){
+  .nav,.topbar{
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+    gap:8px!important;
+  }
+  .brand{gap:10px!important}
+  .logo-mark,.mark{
+    width:48px!important;
+    height:48px!important;
+    font-size:23px!important;
+    box-shadow:6px 6px 0 var(--gold,#d9a514)!important;
+  }
+  .brand b{
+    font-size:25px!important;
+    line-height:.92!important;
+  }
+  .brand span{
+    font-size:10px!important;
+    margin-top:2px!important;
+  }
+  nav{
+    gap:20px!important;
+    overflow-x:auto!important;
+    white-space:nowrap!important;
+    scrollbar-width:none!important;
+    padding-bottom:5px!important;
+  }
+  nav::-webkit-scrollbar{display:none!important}
+  .nav-quote,.quote-btn,.wa{
+    padding:12px 15px!important;
+    min-height:48px!important;
+  }
+
+  .hero{
+    min-height:560px!important;
+    padding-top:42px!important;
+    padding-bottom:42px!important;
+  }
+  .hero:before{
+    width:340px!important;
+    height:150px!important;
+    right:-60px!important;
+    bottom:86px!important;
+    opacity:.45!important;
+  }
+  h1{
+    font-size:clamp(50px,15vw,78px)!important;
+    line-height:.85!important;
+  }
+  .lead{
+    font-size:17px!important;
+    line-height:1.4!important;
+    margin:18px 0 22px!important;
+  }
+  .btn{
+    width:100%!important;
+    min-height:54px!important;
+  }
+
+  .about{
+    padding:54px 0!important;
+  }
+  .about-grid,.about-metrics{
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+  }
+  .about h2{
+    font-size:clamp(44px,13vw,68px)!important;
+  }
+  .about-copy p{
+    font-size:17px!important;
+    line-height:1.5!important;
+  }
+  .about-metrics article{
+    min-height:92px!important;
+    padding:20px!important;
+  }
+  .about-metrics b{
+    font-size:28px!important;
+  }
+
+  .service-card,.service{
+    height:310px!important;
+    border-radius:30px!important;
+  }
+  .icon-line,.icon-circle{
+    width:88px!important;
+    height:88px!important;
+    font-size:34px!important;
+    top:28px!important;
+  }
+  .service-content h3,.service h3{
+    font-size:33px!important;
+  }
+  .proposal-section{
+    padding:44px 0!important;
+  }
+  .proposal-wrap,.proposal{
+    grid-template-columns:1fr!important;
+    gap:20px!important;
+  }
+  .proposal-img img,.proposal img{
+    max-height:none!important;
+  }
+}
+/* === END BT LOGISTIX PRIORITY PASS === */
+
 </style>
 </head>
 <body>
@@ -652,15 +927,26 @@ nav a[href*="about"]{
   </div>
 </section>
 
-<section class="about">
+
+<section class="about" id="about">
   <div class="wrap about-grid">
     <div>
       <div class="kicker">About BT</div>
       <h2>Logistics and supply support for Pretoria.</h2>
     </div>
-    <p>BT Logistix supports households, offices and businesses with local movement, delivery coordination and cleaning supply access. The focus is simple: clear communication, practical service and reliable follow-through.</p>
+    <div class="about-copy">
+      <p>BT Logistix supports households, offices and businesses with local moves, delivery coordination and cleaning supply access.</p>
+      <p>The focus is simple: quick communication, practical service delivery and reliable follow-through from first WhatsApp message to completion.</p>
+      <p>From one-off moves to recurring supply needs, BT is positioned as a local support partner for people who need things moved, delivered or supplied properly.</p>
+    </div>
+  </div>
+  <div class="wrap about-metrics">
+    <article><b>Fast Response</b><span>WhatsApp quotations</span></article>
+    <article><b>Pretoria Based</b><span>Local operating focus</span></article>
+    <article><b>Supply Support</b><span>Industrial & household categories</span></article>
   </div>
 </section>
+
 
 <section id="services">
   <div class="wrap">

@@ -1,0 +1,1 @@
+Applied requested priorities: removed floating WhatsApp, replaced brochure hero with CSS logistics scene, DHL-style About section with 3 metrics, unique service icon accents, tighter proposal section, compressed mobile header.
