@@ -1,1 +1,1 @@
-BT Logistix landing page. Upload all files to the btlogistix GitHub repository and deploy on Vercel.
+BT Logistix V3 full corrected build. Upload index.html and bt-proposal-showcase.jpg to the repo root.
