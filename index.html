@@ -881,6 +881,104 @@ nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!impo
 }
 /* === END BT LOGISTIX PRIORITY PASS === */
 
+
+/* === BT BACKGROUND + OPERATIONS + PULSE PATCH === */
+
+/* Stronger logistics hero background, less brochure/template feel */
+.hero{
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.82) 43%,rgba(0,0,0,.50) 100%),
+    radial-gradient(circle at 78% 30%,rgba(217,165,20,.24),transparent 28%),
+    linear-gradient(135deg,#070707 0%,#151515 42%,#2b220d 42%,#111 60%,#050505 100%)!important;
+}
+.hero:before{
+  content:""!important;
+  position:absolute!important;
+  right:4%!important;
+  bottom:15%!important;
+  width:min(560px,44vw)!important;
+  height:250px!important;
+  opacity:.78!important;
+  background:
+    linear-gradient(#d9a514,#d9a514) 36% 70%/48% 9% no-repeat,
+    linear-gradient(#f2f2f2,#f2f2f2) 17% 56%/26% 22% no-repeat,
+    linear-gradient(#1a1a1a,#1a1a1a) 60% 54%/42% 28% no-repeat,
+    linear-gradient(90deg,transparent 0 20%,rgba(255,255,255,.14) 21% 22%,transparent 23% 100%) 60% 44%/42% 18% no-repeat,
+    radial-gradient(circle,#050505 0 34%,#d9a514 35% 46%,transparent 47%) 25% 84%/98px 98px no-repeat,
+    radial-gradient(circle,#050505 0 34%,#d9a514 35% 46%,transparent 47%) 76% 84%/98px 98px no-repeat;
+  filter:drop-shadow(0 28px 42px rgba(0,0,0,.60))!important;
+  pointer-events:none!important;
+}
+.hero .wrap:after{
+  content:"PRETORIA ROUTES  •  MOVES  •  DELIVERIES  •  SUPPLY";
+  display:block;
+  margin-top:28px;
+  max-width:720px;
+  border-top:1px solid rgba(217,165,20,.55);
+  padding-top:16px;
+  color:rgba(255,255,255,.68);
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.18em;
+}
+
+/* Subtle headline pulse */
+.hero h1 span{
+  animation:btPulse 3.2s ease-in-out infinite!important;
+  transform-origin:left center!important;
+  display:inline-block!important;
+}
+@keyframes btPulse{
+  0%,100%{
+    text-shadow:0 0 0 rgba(217,165,20,0);
+    transform:scale(1);
+  }
+  50%{
+    text-shadow:0 0 24px rgba(217,165,20,.34);
+    transform:scale(1.012);
+  }
+}
+
+/* Clean operations label */
+.kicker{
+  color:#a90b0b!important;
+  letter-spacing:.14em!important;
+}
+
+/* Mobile background correction */
+@media(max-width:900px){
+  .hero{
+    min-height:540px!important;
+    padding-top:38px!important;
+    background:
+      linear-gradient(180deg,rgba(0,0,0,.90) 0%,rgba(0,0,0,.82) 58%,rgba(0,0,0,.50) 100%),
+      radial-gradient(circle at 72% 72%,rgba(217,165,20,.20),transparent 30%),
+      linear-gradient(135deg,#050505 0%,#151515 48%,#2b220d 49%,#090909 100%)!important;
+  }
+  .hero:before{
+    width:310px!important;
+    height:138px!important;
+    right:-58px!important;
+    bottom:60px!important;
+    opacity:.38!important;
+  }
+  .hero .wrap:after{
+    margin-top:20px!important;
+    font-size:10px!important;
+    letter-spacing:.13em!important;
+    line-height:1.5!important;
+    max-width:92%!important;
+  }
+  .hero h1 span{
+    animation:btPulseMobile 3.4s ease-in-out infinite!important;
+  }
+  @keyframes btPulseMobile{
+    0%,100%{text-shadow:0 0 0 rgba(217,165,20,0);transform:scale(1)}
+    50%{text-shadow:0 0 16px rgba(217,165,20,.25);transform:scale(1.006)}
+  }
+}
+/* === END BT BACKGROUND + OPERATIONS + PULSE PATCH === */
+
 </style>
 </head>
 <body>
@@ -915,7 +1013,7 @@ nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!impo
 
 <section>
   <div class="wrap">
-    <div class="kicker">Operating Snapshot</div>
+    <div class="kicker">Operations</div>
     <h2 class="section-title">Built for everyday movement.</h2>
     <p class="section-copy">A simple, service-first logistics partner for people and businesses that need reliable moving, delivery and cleaning supply support.</p>
     <div class="metrics">

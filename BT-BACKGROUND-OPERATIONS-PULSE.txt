@@ -1,0 +1,1 @@
+Updated hero background to feel more logistics/industrial, changed Operating Snapshot to Operations, added subtle pulse animation to gold headline text. Mobile hero background adjusted.
