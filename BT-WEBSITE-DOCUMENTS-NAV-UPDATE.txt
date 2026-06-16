@@ -1,0 +1,1 @@
+Added Business Documents section below Proposal, cleaned navigation to About/Services/Proposal/Contact, removed nav Get Quote CTA, added single floating WhatsApp action. Correct BT WhatsApp number used.

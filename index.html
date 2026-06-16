@@ -415,10 +415,7 @@ footer p{margin-top:10px;color:#ddd}
 }
 
 /* reduced nav clutter */
-nav a[href="#about"],
-nav a[href*="about"]{
-  display:none!important;
-}
+
 
 /* softer CTA corners */
 .quote-btn,
@@ -611,10 +608,10 @@ nav a[href*="about"]{
 /* 1 floating WhatsApp removed; 2 logistics hero; 3 DHL about; 4 unique service cards; 5 tighter proposal; 6 mobile header compression */
 
 /* Hide any legacy floating WhatsApp if still present */
-.float{display:none!important}
+.float{}
 
 /* Reduced nav: Services / Proposal / Contact / Get Quote only */
-nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!important}
+nav a[href="#proof"], nav a[href*="why"]{display:none!important}
 
 /* Softer but still industrial CTAs */
 .quote-btn,.nav-quote,.wa,.btn,.mini,.mini-cta{
@@ -979,6 +976,75 @@ nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!impo
 }
 /* === END BT BACKGROUND + OPERATIONS + PULSE PATCH === */
 
+
+/* === BT DOCUMENTS + NAV CTA UPDATE === */
+.documents-section{
+  background:#f4f1ea;
+  padding:68px 0;
+}
+.documents-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  margin-top:30px;
+}
+.document-card{
+  background:#111;
+  color:#fff;
+  border-radius:32px;
+  padding:34px;
+  min-height:315px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  box-shadow:0 18px 44px rgba(0,0,0,.16);
+  border-top:7px solid var(--gold,#d9a514);
+}
+.document-card .doc-label{
+  color:var(--gold,#d9a514);
+  font-weight:950;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:12px;
+  margin-bottom:18px;
+  display:block;
+}
+.document-card h3{
+  color:#fff;
+  font-size:clamp(36px,4vw,58px);
+  line-height:.88;
+  margin-bottom:18px;
+}
+.document-card p{
+  color:#ddd;
+  font-size:17px;
+  line-height:1.45;
+  margin-bottom:26px;
+}
+.float{
+  position:fixed!important;
+  right:22px!important;
+  bottom:22px!important;
+  z-index:80!important;
+  background:var(--gold,#d9a514)!important;
+  color:#111!important;
+  padding:16px 20px!important;
+  border-radius:8px!important;
+  font-weight:950!important;
+  text-transform:uppercase!important;
+  text-decoration:none!important;
+  box-shadow:0 14px 30px rgba(0,0,0,.28)!important;
+  display:inline-flex!important;
+}
+@media(max-width:900px){
+  .documents-section{padding:50px 0}
+  .documents-grid{grid-template-columns:1fr;gap:16px}
+  .document-card{border-radius:28px;padding:28px;min-height:280px}
+  .document-card h3{font-size:clamp(34px,11vw,50px)}
+  .float{right:16px!important;bottom:16px!important;padding:14px 16px!important;font-size:13px!important}
+}
+/* === END BT DOCUMENTS + NAV CTA UPDATE === */
+
 </style>
 </head>
 <body>
@@ -993,10 +1059,9 @@ nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!impo
       </div>
     </a>
     <nav>
-      <a href="#services">Services</a>
+      <a href="#about">About BT</a><a href="#services">Services</a>
       <a href="#proposal">Proposal</a>
       <a href="#contact">Contact</a>
-      <a class="nav-quote" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20a%20quote">Get a Quote</a>
     </nav>
   </div>
 </header>
@@ -1071,6 +1136,29 @@ nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!impo
   </div>
 </section>
 
+
+<section class="documents-section" id="documents">
+  <div class="wrap">
+    <div class="kicker">Business Documents</div>
+    <h2 class="section-title">Request BT company documents on WhatsApp.</h2>
+    <p class="section-copy">BT Logistix keeps client-facing information simple. Request the capability statement or cleaning supplies catalogue directly on WhatsApp.</p>
+    <div class="documents-grid">
+      <article class="document-card">
+        <span class="doc-label">Company Profile</span>
+        <h3>Capability Statement</h3>
+        <p>Learn about BT Logistix, our services, operating approach and support capabilities across Pretoria.</p>
+        <a class="btn primary" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20please%20send%20me%20the%20Capability%20Statement">Request on WhatsApp</a>
+      </article>
+      <article class="document-card">
+        <span class="doc-label">Supply Document</span>
+        <h3>Cleaning Supplies Catalogue</h3>
+        <p>View cleaning supply categories, consumables, bulk order support and the ordering process.</p>
+        <a class="btn primary" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20please%20send%20me%20the%20Cleaning%20Supplies%20Catalogue">Request on WhatsApp</a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="wrap">
     <h2>Need a move, delivery or supply quote?</h2>
@@ -1087,5 +1175,7 @@ nav a[href="#about"], nav a[href="#proof"], nav a[href*="why"]{display:none!impo
     <div><b>Location</b><p>Pretoria, South Africa</p></div>
   </div>
 </footer>
+
+<a class="float" href="https://wa.me/27711076834?text=Hi%20BT%20Logistix%2C%20I%20need%20assistance">WhatsApp</a>
 </body>
 </html>
