@@ -1,9 +1,12 @@
-# BT Logistix Final Website Polish
+# BT Logistix V3.2 Production
 
-Deploy-ready static site package.
+Final deploy-ready website package.
 
-## Files
-- `index.html` — final polished website with logistics font accents, operations strip, WhatsApp quote links, document cards and Mint Media House footer credit.
+Updates included:
+- Header simplified to BT LOGISTIX only.
+- Navigation strengthened: SERVICES, SUPPLIES, DOCUMENTS, QUOTE REQUEST.
+- Replaced LOCAL COVERAGE with FAST RESPONSE in the operations strip.
+- Added subtle truck movement across the operations strip.
+- Kept the Practical Logistics for Pretoria hero card and Mint Media House footer credit.
 
-## Deployment
-Upload the contents of this folder to GitHub/Vercel. Keep `index.html` at the project root.
+Deploy by uploading the contents of this folder to GitHub/Vercel.
