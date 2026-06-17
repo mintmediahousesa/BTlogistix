@@ -1,14 +1,9 @@
-# BT Logistix — Final Website Polish ZIP
+# BT Logistix Final Website Polish
 
-Deploy-ready static website.
+Deploy-ready static site package.
 
-## Upload instructions
-1. Extract this ZIP.
-2. Upload `index.html` and `README.md` to the GitHub repository root.
-3. Commit changes.
-4. Vercel/GitHub Pages should redeploy automatically.
+## Files
+- `index.html` — final polished website with logistics font accents, operations strip, WhatsApp quote links, document cards and Mint Media House footer credit.
 
-## Contact details included
-- Phone: 071 107 6834
-- Email: bonganihlungwani@yahoo.com
-- Location: Pretoria, South Africa
+## Deployment
+Upload the contents of this folder to GitHub/Vercel. Keep `index.html` at the project root.
