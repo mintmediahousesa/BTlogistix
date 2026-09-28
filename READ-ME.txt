@@ -1,0 +1,38 @@
+BT LOGISTIX — PRETORIA REFINEMENT
+Prepared 28 September 2026
+
+Deployable static page: index.html. No build step or secret credentials needed.
+For the existing GitHub project, replace only index.html; preserve other files.
+Source inspected: mintmediahousesa/BTlogistix, main/index.html
+Source blob: c88ba5e004de736268ff3470f3bb7d87901b1f73
+
+Changes
+- Prioritises local deliveries, furniture transport and small moves within Pretoria.
+- Monday–Saturday; closed Sundays.
+- Recommends enquiring 24–48 hours ahead, subject to confirmed availability.
+- Describes an owned Ford Bantam and an H100 hired per job.
+- Loading help available; furniture assembly arranged and quoted per job.
+- Clearly states wrapping and furniture blankets are not supplied.
+- Cleaning supplies and business documents remain accessible in secondary sections.
+- Quote form prepares WhatsApp or email messages with locations, date, items and assembly.
+- Photos are added by the customer in WhatsApp/email; no website upload implied.
+- No invented fleet photos, work history, capacity numbers, prices or guarantees.
+
+Validation
+PASS: JavaScript syntax, unique IDs, label targets and internal links.
+PASS (simulated DOM): Sunday and past-date validation; WhatsApp/email encoding;
+address and assembly inclusion; cleaning-supplies field toggling.
+NOT VERIFIED: visual/mobile browser rendering or real email/WhatsApp app handoff.
+Local browser binaries were unavailable; remote browser could not access localhost.
+No test messages sent.
+
+Release status
+Not pushed or published. GitHub branch creation returned 403 integration permission denied.
+The connected Vercel account did not list the BT project; the previously supplied
+BT deployment URL returned deployment-not-found through that connection.
+
+Vehicle reference
+CAR Magazine's 2003 Bantam article lists a 630 kg load rating:
+https://www.carmag.co.za/news-blog/ford-bantam/
+This is a model reference, not confirmation of BT's specific vehicle rating.
+Confirm year/variant and vehicle load plate before advertising a payload limit.
